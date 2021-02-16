@@ -8,7 +8,7 @@ public class scanner {
 		//input and output
 		
 		System.out.print("please input the number of bottle: ");
-        Scanner in=new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         int bottle=in.nextInt();
         //if its int it has to eqaul to next int same as double
         System.out.println(bottle);
