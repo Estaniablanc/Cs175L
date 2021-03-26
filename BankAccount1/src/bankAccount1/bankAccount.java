@@ -64,7 +64,7 @@ public class bankAccount {
 		   
 		   public void calcInterest()
 		   {
-			System.out.print("\tInterest: $"+ balance*interestPct); //im not sure why the interest and balance is being printed on the sam line
+			System.out.print("\tInterest: $"+ balance*interestPct+"      "); //im not sure why the interest and balance is being printed on the sam line
 		      balance+=balance*interestPct;
              }
 

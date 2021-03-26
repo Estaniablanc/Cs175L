@@ -16,19 +16,19 @@ public class BankAccountTester {
         double startBal = blanc.nextDouble();
         
         System.out.println("Enter the interest rate for this account:");
-        double rate = blanc.nextDouble();
+        double intrate = blanc.nextDouble();
         
        
-		bankAccount s1306205 = new bankAccount(startBal,rate);
+		bankAccount s1306205 = new bankAccount(startBal,intrate);   //account relying on
     
 		
        
         
         //input the deposit amount 1500
-        System.out.println("Enter amount to Deposit in the account: ");
+        System.out.println("Enter amount to Deposit in the account: "); //
         double amount = blanc.nextDouble();
         s1306205.deposit(amount);
-        //System.out.println("Deposited: " + s1306205.getBalance());
+        
         
         //input  3000
         System.out.println("Enter amount to withdraw from the account: ");
@@ -41,7 +41,7 @@ public class BankAccountTester {
         s1306205.withdraw(amount);
         
         
-        System.out.println("if you want me to generate interest, enter \'yes\': ");
+        System.out.println("if you want me to generate interest, enter 'yes': ");
         String yes = blanc.next();
       
         if(yes.equalsIgnoreCase(yes)) {

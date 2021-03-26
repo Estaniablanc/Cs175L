@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 
 import RoachPopulation.Roachpopulation;
 
-
+import javax.swing.JOptionPane;
 public class roachSimulation {
 
 
@@ -17,7 +17,7 @@ public class roachSimulation {
 		for(int y = 1; y <= 4;y++) {
 			bugs.breed();
 			JOptionPane.showInputDialog(null, " The roach population is "+y+"breading is "+bugs.getRoaches());
-			double percent=Double.parseDouble(JOptionPane.showInternalInputDialog(null, " Enter the percentage for cycle 1:"));
+			double percent=Double.parseDouble(JOptionPane.showInternalInputDialog(null, " Enter the percentage for cycle 1: "));
 			bugs.spray(percent);
 			JOptionPane.showInputDialog(null, " The roach population after cycle is "+y+" "+percent+"percent spray is "+bugs.getRoaches());
 		}
